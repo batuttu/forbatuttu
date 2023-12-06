@@ -109,6 +109,25 @@ function addNewUser(data){
     });
 }
 
+/*function setCalendar(){
+    console.log("eben var midur")
+    fs.readFile(jsonFilePath, 'utf8', (err, jsondata) => {
+        if (err) {
+            console.error('Dosya okuma hatası:', err);
+            return;
+        }
+    
+        // JSON verisini parse et
+        const jsonData = JSON.parse(jsondata);
+        fetch(jsonData)
+            .then(response => response.json())
+            .then(jsondataa => {
+                console.log(jsondataa);})
+    });
+
+}*/
+
+
 io.on('connection', (socket) => {
     console.log('Bir kullanıcı bağlandı');
     
@@ -128,6 +147,10 @@ io.on('connection', (socket) => {
         console.log(data);
         addNewUser(data);
     });
+    /*socket.on("setCalendar",(data) => {
+        console.log(data);
+        setCalendar();
+    });*/
     // Bağlantı kesildiğinde
     socket.on('disconnect', () => {
         console.log('Bir kullanıcı ayrıldı');

@@ -16,7 +16,7 @@
   flex-direction: column;
   gap: 20px;
 }
-.login-screen .usarname-title {
+.login-screen .username-title {
   color: red;
   font-size: 41px;
 }

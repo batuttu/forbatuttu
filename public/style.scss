@@ -14,7 +14,7 @@
     justify-content: center;
     flex-direction: column;
     gap:20px;
-    .usarname-title{
+    .username-title{
         color: red;
         font-size: 41px;
     }
@@ -47,6 +47,7 @@
         flex-wrap: wrap;
         gap:10px;
         .day-box{
+            border-radius: 50px;
             padding: 30px;
             background: red;
             color: black;
